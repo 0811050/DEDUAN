@@ -58,7 +58,30 @@ namespace DEDUAN
                 }
             }
         }
+        public void Xoa()
+        {
+            Console.WriteLine("Sinh vien k dc tham gia la: ");
+            for (int i = DanhSachSinhVien.Count - 1; i >= 0; i--)
+            {
+
+                if ((DateTime.Now.Year - DanhSachSinhVien[i].GetNamSinh()) > 25)
+                {
+                    DanhSachSinhVien[i].InThongTin();
+                    DanhSachSinhVien.RemoveAt(i);
+                }
+            }
+        }
+        
+            
+           
+            
+
+        }
+
     }
+        
 
     
-}
+
+
+

@@ -40,16 +40,16 @@ namespace DEDUAN
                         sinhVienService.XuatDSSinhVien();
                         break;
                     case 4:
+                        sinhVienService.Xoa();
+                        break;
+                    case 5:
                         ChucNang5();
                         break;
                 }
             }while(LuaChon!=0);
         }
 
-//5, Bổ sung vào menu chức năng tên 5.Kế thừa, khi chọn chức năng 5 yêu cầu
-//nhập 1 đối tượng lớp SinhVienUD có giá trị ban đầu bằng Constructor có tham
-//số sau đó in thông tin đối tượng đó ra màn hình bằng phương thức
-//InThongTin(): void (1đ)
+
       static void ChucNang5()
         {
            

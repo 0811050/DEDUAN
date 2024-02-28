@@ -14,6 +14,8 @@ namespace DEDUAN
         private string Ten {  get; set; }
         private int NamSinh { get; set; }
         private double Diem {  get; set; }
+        public int tuoi { get; internal set; }
+
         public SinhVien()
         {
             
@@ -39,6 +41,10 @@ namespace DEDUAN
         public double  GetDiem()
         {
             return this.Diem;
+        }
+        public int GetNamSinh()
+        {
+            return this.NamSinh;
         }
     }
 }
